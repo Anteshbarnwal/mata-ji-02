@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+header{
+    background-color: #750f0f;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 0;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+}
+.logo img{
+    height: 50px;
+    border-radius: 10px;
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+#home{
+    height: 100vh;
+    display: grid;
+    gap: 50px;
+    justify-content: center;
+    place-items: center;
+    background-image: url(pexels-aditya-karmakar-1677275562-27878671.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.container .home-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.home-content{
+    width: 500px;
+}
+.home-content h1{
+    font-size: 3rem;
+}
+.home-content p{
+    font-size: 1.2rem;
+}
+
+.donate-btn {
+    width: 100px;
+    padding: 10px;
+    background-color: #750f0f;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.donate-btn:hover{
+    opacity: 0.8;
+    transition: 0.3s ease-in-out;
+}
+
+
+#about {
+    height: 80vh;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 30px;
+    margin: 0 auto;
+}
+.left-about img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 20px;
+    width: 100%;
+    height: 60vh;
+}
+.right-about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    width: 50%;
+    height: 80vh;
+}
+
+#donate{
+    height: 100vh;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    margin: 0 auto;
+}
+.qrimg {
+    background-image: url(IMG_20250909_084404.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 20px;
+    width: 100%;
+    height: 400px;
+}
+.donate-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    width: 50%;
+    height: 80vh;
+    padding: 10px 50px;
+}
+.bank-details {
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+#contact{
+    height: 100vh;
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+#contact h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 50px 0;
+}
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+.msg input{
+    width: 300px;
+    padding: 10px 30px;
+}
+
+
+.right-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.donate-btn1 {
+    width: 150px;
+    padding: 20px;
+    background-color: #750f0f;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 50px;
+}
+.donate-btn1:hover{
+    opacity: 0.8;
+    transition: 0.3s ease-in-out;
+}
+
+
+@media only screen and (min-width:200px) and (max-width : 450px) {
+    #home{
+        height: 70vh;
+        background-size: cover;
+    }
+    .home-content {
+        padding: 10px 30px;
+    }
+    .donate-btn {
+        padding: 20px 30px;
+        font-size: 1.4rem;
+        width: 150px;
+    }
+    .home-content h1{
+        font-size: 3rem;
+        color: #ccc;
+    }
+    .home-content p{
+        color: #ccc;
+        font-size: 1.4rem;
+    }
+    #about{
+        flex-direction: column;
+        gap: 20px;
+        height: 120vh;
+        padding: 40px 0;
+        margin-top: 100px;
+    }
+    header {
+        width: 570px;
+    }
+    nav {
+        padding: 10px 30px;
+    }
+    main {
+        width: 570px;
+    }
+    .left-about img {
+        height: 30vh;
+    }
+    .right-about {
+        width: 80%;
+        align-items: center;
+        gap: 60px;
+    }
+    .right-about h1{
+        font-size: 3rem;
+    }
+    .right-about p{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    #donate {
+        flex-direction: column;
+        height: 100vh;
+        gap: 50px;
+        padding: 10px 30px;
+        margin-top: 100px;
+    }
+    #donate h1{
+        font-size: 3.5rem;
+    }
+    .qrimg {
+        height: 1000px;
+        border-radius: 20px;
+        background-size: contain;
+    }
+    .donate-content{
+        width: 400px;
+        margin-top: 0;
+        height: 40%;
+    }
+    #contact {
+        flex-direction: column;
+        height: 100vh;
+        gap: 100px;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    #contact h1{
+        font-size: 3.5rem;
+        margin: 10px 0;
+    }
+    .contact-content {
+        width: 100%;
+    }
+    .right-contact {
+        width: 100%;
+        margin-bottom: 30px;
+        gap: 80px;
+    }
+    #contact h2{
+        font-size: 2.5rem;
+    }
+    .call, .group {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .msg input {
+        padding: 20px 20px;
+        width: 400px;
+    }
+}
